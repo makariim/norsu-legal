@@ -19,7 +19,7 @@ hr{border:0;border-top:1px solid var(--line);margin:36px 0}
 <body>
 <main>
 <h1>Norsu Fit privacy</h1>
-<div class="date">Last updated 17 November 2026</div>
+<div class="date">Last updated 18 November 2026</div>
 
 <p>Norsu Fit is a training and nutrition coach for iPhone. It is built so that your data stays with you. This page says what the app keeps, where it goes, and what it never does.</p>
 
@@ -40,18 +40,20 @@ hr{border:0;border-top:1px solid var(--line);margin:36px 0}
 <p>The companions need an AI model to answer. You choose how in the app:</p>
 <ul>
 <li><strong>Templates only:</strong> nothing leaves your phone.</li>
-<li><strong>Your own API key:</strong> when you send a message or log by voice or photo, the relevant text, your recent logs and goals needed for the answer, and any photo you attach are sent to the provider you picked (for example OpenRouter, Groq or Anthropic) under that provider's own privacy terms. Your key is kept in the iPhone Keychain.</li>
-<li><strong>A paired computer of your own:</strong> the same information goes, encrypted over HTTPS, to a computer you set up and pair yourself, which passes it to the AI service you run there.</li>
+<li><strong>Your own API key:</strong> when you send a message or log by voice or photo, the relevant text, your recent logs and goals needed for the answer, and any photo you attach are sent to the provider you picked (for example OpenRouter) under that provider's own privacy terms. Your key is kept in the iPhone Keychain.</li>
 </ul>
 
 <h2>Voice, camera, photos and location</h2>
 <ul>
-<li><strong>Microphone and speech:</strong> only when you tap the microphone. Speech is turned into text on your iPhone by Apple, or on your own paired computer if you set one up. Recordings are not kept.</li>
+<li><strong>Microphone and speech:</strong> only when you tap the microphone. With an OpenRouter key, the recording is sent through OpenRouter to a speech to text service (currently ElevenLabs Scribe) to turn it into text; without one, or offline, Apple turns it into text on your iPhone. Recordings are not kept by the app.</li>
 <li><strong>Camera:</strong> only when you scan a barcode, photograph a meal or a medicine box, or scan a pairing code.</li>
 <li><strong>Barcodes:</strong> a scanned barcode number is looked up in the public Open Food Facts database. Nothing else is sent with it.</li>
 <li><strong>Location:</strong> to draw the route of a walk you start, and to find your city for prayer times. It stays on your phone.</li>
 <li><strong>Photos:</strong> the app only adds images to your library when you ask it to save one.</li>
 </ul>
+
+<h2>Usage records</h2>
+<p>The app keeps a record on your phone of each AI request: what it was for, the model, the number of tokens and the cost, so you can see what you spend. It does not record the words of your messages. You can export it yourself from Settings.</p>
 
 <h2>Children</h2>
 <p>Norsu Fit is not meant for children under 13 and does not knowingly collect their data.</p>
